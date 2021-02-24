@@ -73,13 +73,3 @@ If you want to apply a different preprocessing scheme to the data, it might be t
 * The raw IDs in our dataset have to be mapped to [0, n_instance]. Thereby, no ID should be missing (e.g. 0,1,2,3 and not 0,2,3). Please note that those two requirements are important to have a well-defined embedding table. In `knowledgeawarerecommendation.py` we then remap the items/entities with n_users, so that we have again well-defined indices for the collaborative knowledge graph. All data instances for KGAT model contain those remaped items.
 * No duplicate triples in kg_file and no duplicate tuples in rating_file are present.
 * Each user in test and eval set has to also be contained in train set
-
-
-Acknowledgements
-==================
-You can freely use the data in your own research work, please cite the following paper as reference:
-
-The user must acknowledge the following rules while using this dataset.
-* If you apply the data in your own research work, please cite the mentioned paper above as reference.
-* Please don't redistribute the data without our permission.
-* Please don't use the data for any commercial purposes without our permission.
